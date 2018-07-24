@@ -1,0 +1,33 @@
+@import "helpers/variables.scss";
+
+.header_content {
+
+    height: 300px;
+    color: #fff;
+    position: relative;
+    @media (min-width: $sm) {
+        height: 450px;
+    }
+    &:before {
+        z-index: 1;
+        @extend %overlay;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+        position: relative;
+        z-index: 9;
+        top: 20%;
+
+    }
+    h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        margin: 20px 0;
+
+    }
+}

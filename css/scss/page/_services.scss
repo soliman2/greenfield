@@ -1,0 +1,242 @@
+@import "helpers/variables.scss";
+@import "componants/buttons.scss";
+@import "componants/slider-custum.scss";
+@import "helpers/singlepage.scss";
+
+
+/**Some Style Glopal in All page**/
+
+.services_page-video {
+    padding-top: 0;
+    padding-bottom: 30px;
+    h4 {
+        font-size: 18px;
+        color: $greenColor;
+        text-align: center;
+    }
+    .video {
+        height: 200px;
+        width: 100%;
+        box-shadow: 0 2px 10px $greenColor;
+        border-radius: 3px;
+        @media (max-width: $sm) {
+            margin-top: 22px;
+        }
+
+    }
+}
+
+.page_video-color {
+    background-color: #f6f6f6
+}
+
+/* =2= Start Section Services Department */
+
+.services_department {
+    text-align: center;
+    background-color: #F6F6F6;
+    h3 {
+        font-size: 18px;
+        color: $greenColor;
+        margin-bottom: 30px;
+    }
+    @extend %pagesection;
+    p {
+        font-size: 18px;
+        color: rgba(18, 68, 98, 0.88);
+        line-height: 30px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+.services_department-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services_department-block {
+    width: 200px;
+
+
+    .block_img {
+        height: 100px;
+        width: 100px;
+        line-height: 60px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: $greenColor;
+        line-height: 26px;
+        text-align: center;
+        @media (min-width: $md) {
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+    }
+}
+
+/* =2= End Section Services Department */
+
+/*=3= Start Section Services Principles*/
+
+.services_department-suitable {
+    @extend %pagesection;
+    h3 {
+        text-align: center;
+        color: $greenColor;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .webinars_block {
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .description {
+            min-height: 200px;
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/*=3= End Section Services Principles*/
+
+/*=5= Start Section Services Qualifying*/
+
+.services_qualifying {
+    @extend %pagesection;
+    .page_list-color {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+}
+
+.services_qualifying-img {
+    margin-bottom: 30px;
+    img {
+        max-height: 100%;
+        width: 100%;
+    }
+}
+
+/*=5= End Section Services Qualifying*/
+
+/**=6= Start Section Services Principles**/
+
+.services_logistics {
+    .services_logistics-tab {
+        text-align: center;
+        li {
+            border-radius: 5px;
+            @extend %transition;
+            cursor: pointer;
+            background-color: rgba(18, 68, 98, 0.15);
+            display: inline-block;
+            padding: 10px 20px;
+            @media (max-width: $sm) {
+                margin:10px 0;
+            }
+            &:hover {
+                background-color: $greenColor;
+                color: #fff;
+            }
+            &.active {
+                background-color: $greenColor;
+                border-radius: 5px;
+                color: #fff;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    bottom: -10px;
+                    height: 0;
+                    width: 0;
+                    right: 50%;
+                    left: 50%;
+                    border-top: 5px solid $greenColor;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+
+
+                }
+            }
+        }
+    }
+}
+
+
+/***Start Tab Style**/
+
+.all_tabs {
+    & > div:not(:first-child) {
+        display: none;
+    }
+}
+
+.tab_content {
+    p {
+        font-size: 15px;
+        color: $greenColor;
+        line-height: 26px;
+        margin: 25px 0;
+        text-align: center;
+    }
+}
+
+.tab_content-slider {
+    position: relative;
+    padding: 30px 0;
+    &:before {
+        @extend %overlay;
+        background-color: $overlay;
+    }
+    .tab_content-slide-js {
+        position: relative;
+        z-index: 9;
+        color: #fff;
+        text-align: center;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+
+}
+
+.tab_content-describtion {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    color: $greenColor;
+    text-align: left;
+    min-height: 228px;
+    margin-top: 30px;
+}
+
+/**=6= End Section Services Principles**/

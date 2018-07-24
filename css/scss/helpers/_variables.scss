@@ -1,0 +1,186 @@
+$greenColor:#43A546;
+$redColor:#db272c;
+$bR:3px;
+$overlay:rgba(0, 64, 133, 0.52);
+
+
+/*Media Query*/
+
+$sm:576px;
+$md:768px;
+$lg:992px;
+$xl:1200px;
+
+/*Box Shadow*/
+
+$boxShadowBlue:0 3px 6px #124462;
+
+/***Container Widt***/
+
+.container {
+    @media (min-width: $lg) {
+        max-width: 1170px;
+    }
+}
+
+/*Glopal Style*/
+
+button {
+    border: 0;
+    cursor: pointer
+}
+
+img {
+    //    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.home_title {
+
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    color: $greenColor;
+    margin-bottom: 25px;
+
+}
+
+.home_title-blue {
+    h3 {
+        color: $greenColor;
+    }
+    p {
+        color: #1F3847;
+
+    }
+}
+
+.home_title-white {
+    h3 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+}
+
+[data-src] {
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/********Glopal Class******/
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+%transition {
+    transition: all ease-in-out 0.3s;
+}
+
+%overlay {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+
+}
+
+%overlayBlue {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 64, 133, 0.52);
+
+}
+
+%pseudo {
+    position: absolute;
+    display: block;
+    font-family: "FontAwesome";
+
+}
+
+%sectionHomePage {
+    padding: 40px 0;
+}
+
+%sectionPadding {
+    padding: 50px 0;
+}
+
+%pagesection {
+    padding: 30px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Start Glopal Style For Single Page*/
+
+.singl_page-content {
+    padding: 50px 0;
+}
+
+.single_page-head {
+    background-color: rgb(236, 255, 209);
+    padding: 50px 0;
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: $redColor;
+    }
+}
+
+.singl_page-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.singl_page-paragraph {
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(115, 114, 114);
+}
+
+/*End Glopal Style For Single Page*/
+
+/*****Font******/
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Montserrat', sans-serif;
+}

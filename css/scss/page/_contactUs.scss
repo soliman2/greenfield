@@ -1,0 +1,69 @@
+@import "helpers/variables.scss";
+@import "componants/buttons.scss";
+@import "layout/header.scss";
+@import "componants/slider-custum.scss";
+
+/**/
+
+.contact_us {
+    text-align: center;
+}
+
+.contact_us-block {
+    i {
+        color: $redColor;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        border-radius: 100%;
+        border: 1px solid $redColor;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/*****/
+
+.contact_us-form {
+    padding: 20px;
+    .row {
+        box-shadow: 0 0 10px $greenColor;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+
+
+    input,
+    textarea {
+        padding: 10px 12px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    input:focus,
+    textarea:focus {
+        border: 1px solid $greenColor;
+        outline: none !important;
+    }
+    textarea {
+        height: 200px;
+    }
+    button {
+        padding: 6px 16px;
+        color: #fff;
+        background-color: $greenColor;
+        border: 1px solid $greenColor;
+        @extend %transition;
+        &:hover {
+            background-color: transparent;
+            color: $greenColor;
+        }
+    }
+}

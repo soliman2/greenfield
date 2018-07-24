@@ -1,0 +1,65 @@
+@import "helpers/variables.scss";
+@import "componants/buttons.scss";
+@import "layout/header.scss";
+@import "componants/slider-custum.scss";
+
+/**/
+
+.about_us {}
+
+.about_us-description {
+
+    p {}
+}
+
+.about_us-img {
+    height: 350px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    @media (max-width: $md) {
+        margin-top: 30px;
+    }
+    width: 100%;
+    height: auto;
+}
+
+/*=2= Start Sinfgle Our Team*/
+
+.our_team {
+    padding-top: 40px;
+    h3 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .our_team-block {
+        position: relative;
+        @media (max-width: $sm) {
+            margin-bottom: 25px;
+        }
+        .our_team-img {
+            height: 180px;
+            widows: 100%;
+            img {}
+        }
+        .our_team-description {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #fff;
+            right: 0;
+            left: 0;
+            padding: 10px;
+            text-align: center;
+            margin: 0 10px;
+            position: absolute;
+            bottom: -2px;
+            h5 {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/*=2= End Sinfgle Our Team*/

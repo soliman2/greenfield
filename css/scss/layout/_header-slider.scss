@@ -1,0 +1,79 @@
+@import "helpers/variables.scss";
+.carousel {
+    .carousel-item {
+        &:after {
+            @extend %overlay;
+            background-color: rgba(0, 0, 0, 0.7);
+
+        }
+    }
+    a[class*="carousel"] {
+        padding: 2px 10px;
+        background-color: #fff;
+        border: 1px solid $redColor;
+        height: 40px;
+        width: 40px;
+        opacity: 1;
+        top: 50%;
+        margin: 0 50px;
+        transform: translate(-50%, -50%);
+        @extend %transition;
+        &:hover {
+            background-color: $redColor;
+            &:before {
+                color: #fff;
+
+            }
+        }
+        &:before {
+            @extend %pseudo;
+            color: $redColor;
+            @extend %transition;
+
+
+        }
+        span {
+            display: none;
+        }
+    }
+    .carousel-control-prev {
+        &:before {
+            content: "\f053";
+        }
+    }
+
+    .carousel-control-next {
+        &:before {
+            content: "\f054";
+        }
+    }
+}
+
+/**Slider Img Size */
+
+.carousel-item {
+//    height: 80vh;
+}
+
+.carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+        color: $redColor;
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        @media (max-width: $sm) {
+            font-size: 18px;
+        }
+    }
+    p {
+          color: #fff;
+    font-size: 20px;
+    line-height: 33px;
+        @media (max-width: $sm) {
+            font-size: 12px;
+        }
+    }
+}
