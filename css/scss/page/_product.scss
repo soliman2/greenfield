@@ -58,12 +58,15 @@
 
     .product_gallary-content {
         display: flex;
-        justify-content: center;
-        //        flex-wrap: wrap;
+        justify-content: center; //        flex-wrap: wrap;
         .product_gallary-img {
             height: 150px;
             width: 150px; //            border: 1px solid #fff;
             margin: 1px;
         }
     }
+}
+
+.product_video {
+    padding: 30px 0;
 }
